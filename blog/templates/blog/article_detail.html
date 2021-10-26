@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block static_files %}  
+<link rel="stylesheet" href="{% static 'blog/style.css' %}">
+{% endblock static_files %}  
+
+
+{% block page_content %}      
+
+	<br>
+	<br>
+	<h3>{{ this_article.title }}</h3>
+	<p>{{ this_article.body|safe}}</p><hr>
+	<small>{{ this_article.pub_date|timesince}}</small><hr>
+	<small>{{ this_article.author }}</small><hr>
+
+{% endblock page_content %}
+ 

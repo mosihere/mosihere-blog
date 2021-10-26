@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block static_files %}
+
+
+	<link rel="icon" type="image/png" href="{% static 'contact_us/images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contact_us/vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contact_us/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contact_us/fonts/iconic/css/material-design-iconic-font.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contact_us/fonts/Linearicons-Free-v1.0.0/icon-font.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contact_us/vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contact_us/vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contact_us/vendor/animsition/css/animsition.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contact_us/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contact_us/vendor/daterangepicker/daterangepicker.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contact_us/css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'contact_us/css/main.css' %}">
+<!--===============================================================================================-->
+
+{% endblock static_files %}
+
+
+
+
+{% block page_content %}
+
+	
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			
+			<div class="contact100-form-title">
+				<span>Contact Us</span>
+			</div>
+
+
+
+
+            <form method='post' class="contact100-form validate-form">
+				<div class="wrap-input100 validate-input">
+					{% csrf_token %}
+                    {{form.first_name}}
+					<span class="focus-input100"></span>
+					<label class="label-input100" for="name">
+						<span class="lnr lnr-user m-b-2"></span>
+					</label>
+				</div>
+
+
+
+
+
+
+			<form class="contact100-form validate-form">
+				<div class="wrap-input100 validate-input">
+					{% csrf_token %}
+                    {{form.last_name}}
+					<span class="focus-input100"></span>
+					<label class="label-input100" for="name">
+						<span class="lnr lnr-user m-b-2"></span>
+					</label>
+				</div>
+
+
+				<div class="wrap-input100 validate-input">
+					{% csrf_token %}
+                    {{form.email_address}}
+					<span class="focus-input100"></span>
+					<label class="label-input100" for="email">
+						<span class="lnr lnr-envelope m-b-5"></span>
+					</label>
+				</div>
+
+
+				
+
+				<div class="wrap-input100 validate-input">
+					{% csrf_token %}
+                    {{form.message}}
+					<span class="focus-input100"></span>
+					<label class="label-input100 rs1" for="message">
+						<span class="lnr lnr-bubble"></span>
+					</label>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						Send Now
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+
+{% endblock page_content %}
+
+

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block static_files %}  
+
+<link rel="stylesheet" href="{% static 'blog/form.css' %}">
+
+{% endblock static_files %}  
+
+
+
+{% block page_content %}
+
+<section class="myform-area">
+              <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-8">
+                          <div class="form-area login-form">
+                              <div class="form-content">
+                                  <h2>Sign Up</h2>
+                                  <p>Hello</p>
+                                  <ul>
+                                      <li><a href="#" class="facebook"><i class="fa fa-facebook-f"></i><span>facebook</span></a></li>
+                                      <li><a href="#" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a></li>
+                                  </ul>
+                              </div>
+                              <div class="form-input">
+                                  <h2>SignUp Form</h2>
+
+                                  <form method="post">
+                                  {% csrf_token %}
+                                  {{form.as_p}}
+                                     
+                                      <div class="myform-button">
+                                          <button class="myform-btn">Register</button>
+                                      </div>
+                                  </form>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+
+{% endblock page_content %}

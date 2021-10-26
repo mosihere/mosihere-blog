@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block static_files %}
+    <!-- font icons -->
+    <link rel="stylesheet" type="text/css" href="{% static 'home/assets/vendors/themify-icons/css/themify-icons.css' %}">
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" type="text/css" href="{% static 'home/assets/css/meyawo.css' %}">
+{% endblock static_files %}
+
+
+{% block page_content %}
+    <!-- Page Navbar -->
+   
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am Mosihere</span>
+            </h1>
+            <p class="header-subtitle">Backend Developer</p>            
+
+            <button class="btn btn-primary"><a href='https://github.com/mosihere'>Visit My Github!<a/></button>
+        </div>              
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="{% static 'home/images/me.jpg' %}" class="about-img" alt="My Picture">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                    Mostafa Khoshhal, 23 Y.o! I'm a self learner, work 1 year as a front-end developer.
+                        <br> but now work for 2 years as a back-end developer. Interested in Python-Django!
+                        Opensource Project and Linux Lover :)
+                        I also had a Bachelor's Degree In PR Field!
+                        Student of Management in Tehran Gharb University :)
+                    </p>
+                    <button class="btn-rounded btn btn-outline-primary mt-4"><a href='https://jobinja.ir/user/UJ-3973928'>Download CV</a></button>
+                </div>              
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script></p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a target='_blank' href="https://facebook.com/mosihere" class="link"><i class="ti-facebook"></i></a>
+                <a target='_blank' href="https://twitter.com/mosiwashere" class="link"><i class="ti-twitter-alt"></i></a>
+                <a target='_blank' href="https://mosihere@gmail.com" class="link"><i class="ti-google"></i></a>
+                <a target='_blank' href="https://instagram.com/mosihere" class="link"><i class="ti-instagram"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+  
+
+{% endblock page_content %}
