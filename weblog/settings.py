@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-hcd8-ul+e0#%_awohb2eov3i6g155xfc7d&#&i7d*0pl@3doa!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -130,5 +130,3 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-import django-on-heroku
-django-on-heroku.settings(locals())
