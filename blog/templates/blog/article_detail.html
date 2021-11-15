@@ -12,6 +12,7 @@
 	<br>
 	<h3>{{ this_article.title }}</h3>
 	<p>{{ this_article.body|safe}}</p><hr>
+	<img src="{{this_article.image.url}}"/>
 	<small>{{ this_article.pub_date|timesince}}</small><hr>
 	<small>{{ this_article.author }}</small><hr>
 
