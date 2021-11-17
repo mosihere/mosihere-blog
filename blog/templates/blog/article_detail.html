@@ -13,8 +13,10 @@
 	<h3>{{ this_article.title }}</h3>
 	<p>{{ this_article.body|safe}}</p><hr>
 	<img src="{{this_article.image.url}}" class="img-fluid"/>
+	<br>
+	<div>
 	<small>Created: {{ this_article.pub_date|timesince}}</small><hr>
-	<small>Author: {{ this_article.author }}</small><hr>
-
+	<small>Author: {{ this_article.author|title }}</small><hr>
+</div>
 {% endblock page_content %}
  
