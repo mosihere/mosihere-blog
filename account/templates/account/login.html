@@ -5,7 +5,7 @@
 
 {% block static_files %}  
 
-<link rel="stylesheet" href="{% static 'blog/form.css' %}">
+<link rel="stylesheet" href="{% static 'account/form.css' %}">
 
 {% endblock static_files %}  
 
@@ -13,37 +13,25 @@
 
 {% block page_content %}
 
-<section class="myform-area">
-              <div class="container">
-                  <div class="row justify-content-center">
-                      <div class="col-lg-8">
-                          <div class="form-area login-form">
-                              <div class="form-content">
-                                  <h2>Login</h2>
-                                  <p>Hello</p>
-                                  <ul>
-                                      <li><a href="#" class="facebook"><i class="fa fa-facebook-f"></i><span>facebook</span></a></li>
-                                      <li><a href="#" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a></li>
-                                  </ul>
-                              </div>
-                              <div class="form-input">
-                                  <h2>Login Form</h2>
 
-                                  <form method="post">
-                                  {% csrf_token %}
-                                  {{form.as_p}}
-                                     
-                                      <div class="myform-button">
-                                          <button class="myform-btn">Login</button>
-                                      </div>
-                                  </form>
+<form  method="post">
+{% csrf_token %}
 
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </section>
+  <div class="mcontainer">
+        {{form.as_p}}
 
+    <button class="mybutton" type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+
+  </div>
+
+
+</form>
 
 {% endblock page_content %}
+
+
+
