@@ -24,8 +24,8 @@ Hope you'll enjoy it!
   - Login
   - Contact-us
   - Blog
-  - better responsive
-    + signup/login
+  - ~~better responsive~~
+    + ~~signup/login~~
   
 + Article Publishement by User
   - Users can Publish Articles
@@ -34,7 +34,7 @@ Hope you'll enjoy it!
 + Article-Detail
   - user can publish comment for Articles
   - user can like or dislike Articles
-  - Image field for Articles
+  - ~~Image field for Articles~~
 
 + Contact us 
   - Maybe I'll change it and use `Modal` instead
