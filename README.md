@@ -32,7 +32,7 @@ Hope you'll enjoy it!
   - Users can have a `Profile`
 
 + Article-Detail
-  - user can publish comment for Articles
+  - ~~user can publish comment for Articles~~
   - user can like or dislike Articles
   - ~~Image field for Articles~~
 
