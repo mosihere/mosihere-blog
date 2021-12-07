@@ -6,7 +6,7 @@
 + then active it --> `source .venv/bin/activate`
   - to deactivate it just use `deactivate`
 + install the requirements.txt
-  - ` python -m pip install -r requirements.txt`
+  - `python -m pip install -r requirements.txt`
 + run the project
   - python manage.py runserver
   
