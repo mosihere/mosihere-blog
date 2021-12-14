@@ -33,7 +33,7 @@ Hope you'll enjoy it!
 
 + Article-Detail
   - ~~user can publish comment for Articles~~
-  - user can like or dislike Articles
+  - ~~user can like or dislike Articles~~
   - ~~Image field for Articles~~
 
 + Contact us 
