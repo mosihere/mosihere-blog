@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.db.models.deletion import CASCADE
 from django.urls import reverse
 
 
@@ -13,7 +12,7 @@ class Article(models.Model):
     image = models.ImageField(default='default.jpg', blank=True)
     pub_date = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-
+    likes = models.ManyToManyField(User, related_name='blog_posts')
 
 
     def __str__(self) -> str:
@@ -25,6 +24,8 @@ class Article(models.Model):
     def get_absolute_url(self):
         return reverse("blog:detail", kwargs={"slug": self.slug})
 
+    def total_likes(self):
+        return self.likes.count()
 
 
 

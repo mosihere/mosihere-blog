@@ -1,5 +1,4 @@
 from django.contrib import admin
-from django.db import models
 from .models import Article, Comment
 
 
@@ -23,3 +22,5 @@ class CommentAdmin(admin.ModelAdmin):
         queryset.update(active=True)
 
 admin.site.register(Comment, CommentAdmin)
+
+

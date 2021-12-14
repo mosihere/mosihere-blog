@@ -25,6 +25,14 @@
 	<small>Author: {{ this_article.author|title }}</small><hr>
 	</div>
 
+  <br>
+  <form action="{% url 'blog:like_article' this_article.slug %}"
+  method="POST">
+      {% csrf_token %}
+      <button type="submit" name="article_id" value="{{ this_article.id }}" class="btn btn-primary btn-sm">Like</button>
+      - {{total_likes}} Likes
+  </form>
+  <br>
 
 
 {% load crispy_forms_tags %}
