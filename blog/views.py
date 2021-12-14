@@ -6,7 +6,7 @@ from .models import Article
 
 
 def article_like(request, slug):
-    post = get_object_or_404(Article, id=request.POST.get('article_id'))
+    post = get_object_or_404(Article, slug=slug)
     post.likes.add(request.user)
     return HttpResponseRedirect(reverse('blog:detail', kwargs={'slug':slug}))
 
