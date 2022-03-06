@@ -10,7 +10,7 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('account/', include('account.urls')),
     path('contact_us/', include('contact_us.urls')),
-    path('', include('home.urls')),
+    path('blog/', include('blog.urls')),
     path('__debug__/', include('debug_toolbar.urls')),
 ]
 

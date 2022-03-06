@@ -1,4 +1,3 @@
-from django.contrib.messages.api import success
 from django.http.response import HttpResponseRedirect
 from django.shortcuts import redirect, render
 from .forms import LoginForm, RegisterForm
