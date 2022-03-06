@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'account',
     'contact_us',
     'home',
+    'api',
     'crispy_forms',
     'debug_toolbar',
     'rest_framework',
