@@ -20,7 +20,7 @@ Hope you'll enjoy it!
 
 #### List of Features to add:
 
-+ Dockerizing 
++ ~~Dockerizing~~ 
 
 + Improve UI-UX
   - Login
