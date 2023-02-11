@@ -20,6 +20,8 @@ Hope you'll enjoy it!
 
 #### List of Features to add:
 
++ Dockerizing 
+
 + Improve UI-UX
   - Login
   - Contact-us
