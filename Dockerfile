@@ -6,5 +6,5 @@ COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 COPY . .
 ENV PYTHONUNBUFFERED=1
-EXPOSE 3000
-CMD ["python", "manage.py", "runserver", "3000"]
+EXPOSE 8020
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8020"]
