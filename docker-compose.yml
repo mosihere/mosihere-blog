@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./
+    expose:
+      - 8020
+    ports:
+      - 8020:8020
+    volumes:
+      - .:/app
+    
